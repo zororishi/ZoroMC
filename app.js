@@ -7,7 +7,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 /* GET home page. */
-app.get('/', function(req, res) {
+app.get('/about', function(req, res) {
     res.render('index')
   });
   app.use(express.static(path.join(__dirname, 'public')));
